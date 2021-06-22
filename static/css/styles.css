@@ -1,3 +1,32 @@
+.header {
+  display: flex;
+  padding: 1em 1.5em;
+  justify-content: space-between;
+}
+
+.hero {
+  text-align: center;
+  padding-bottom: 5em;
+}
+.hero .copy {
+  margin-bottom: 2.5em;
+}
+.hero__image {
+  height: 300px;
+  margin: 0 calc(-1 * $wrapperSpace);
+  background: url("../../../../assets/imagenes/image-mockups.png ") center bottom no-repeat, url("../../../../assets/imagenes/bg-intro-mobile.svg ") center no-repeat;
+  background-size: 345px, cover;
+}
+
+.menu {
+  width: 40px;
+  background: url("../../../../assets/imagenes/icon-hamburger.svg") no-repeat center;
+}
+
+.why {
+  text-align: center;
+}
+
 :root {
   font-size: 16px;
 }
@@ -13,19 +42,6 @@ body {
   font-size: 0.9em;
 }
 
-.hero {
-  text-align: center;
-}
-.hero .copy {
-  margin-bottom: 2.5em;
-}
-.hero__image {
-  height: 300px;
-  margin: 0 calc(-1 * $wrapperSpace);
-  background: url("../../../../assets/imagenes/image-mockups.png ") center bottom no-repeat, url("../../../../assets/imagenes/bg-intro-mobile.svg ") center no-repeat;
-  background-size: 345px, cover;
-}
-
 .wrapper {
   padding: 0 1.5em;
 }
@@ -37,6 +53,7 @@ body {
   line-height: 1.3;
   margin: 0;
   margin: bottom 0.5em;
+  padding-top: 0.8em;
 }
 
 .button {

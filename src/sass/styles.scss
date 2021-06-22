@@ -1,3 +1,10 @@
+@import "../sass/componentes/header";
+@import "../sass/componentes/hero";
+@import "../sass/componentes/menu";
+@import "../sass/componentes/why.scss";
+@import "../sass/componentes/latestArticles.scss";
+@import "../sass/componentes/footer.scss";
+
 :root {
   font-size: 16px;
 }
@@ -21,20 +28,6 @@ body {
   font-size: 0.9em;
 }
 
-.hero {
-  text-align: center;
-  .copy {
-    margin-bottom: 2.5em;
-  }
-  &__image {
-    height: 300px;
-    margin: 0 calc(-1 * $wrapperSpace);
-    background: url("../../../../assets/imagenes/image-mockups.png ") center
-        bottom no-repeat,
-      url("../../../../assets/imagenes/bg-intro-mobile.svg ") center no-repeat;
-    background-size: 345px, cover;
-  }
-}
 .wrapper {
   padding: 0 $wrapperSpace;
 }
@@ -46,6 +39,7 @@ body {
     line-height: 1.3;
     margin: 0;
     margin: bottom 0.5em;
+    padding-top: 0.8em;
   }
 }
 .button {

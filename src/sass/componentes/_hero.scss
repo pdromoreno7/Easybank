@@ -1,0 +1,15 @@
+.hero {
+  text-align: center;
+  padding-bottom: 5em;
+  .copy {
+    margin-bottom: 2.5em;
+  }
+  &__image {
+    height: 300px;
+    margin: 0 calc(-1 * $wrapperSpace);
+    background: url("../../../../assets/imagenes/image-mockups.png ") center
+        bottom no-repeat,
+      url("../../../../assets/imagenes/bg-intro-mobile.svg ") center no-repeat;
+    background-size: 345px, cover;
+  }
+}
