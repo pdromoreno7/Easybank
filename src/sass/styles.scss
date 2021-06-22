@@ -32,6 +32,11 @@ body {
     margin: bottom 0.5em;
     padding-top: 0.8em;
   }
+  &__h2 {
+    @extend .title__h1;
+    font-size: 1.5em;
+    // border: 1px solid red;
+  }
 }
 .button {
   border: none;
