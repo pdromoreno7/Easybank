@@ -7,9 +7,9 @@
   &__image {
     height: 300px;
     margin: 0 calc(-1 * $wrapperSpace);
-    background: url("../../imagenes/image-mockups.png") center
+    background: url("../imagenes/image-mockups.png") center
         bottom no-repeat,
-      url("../../imagenes/bg-intro-mobile.svg") center no-repeat;
+      url("../imagenes/bg-intro-mobile.svg") center no-repeat;
     background-size: 345px, cover;
   }
 }
