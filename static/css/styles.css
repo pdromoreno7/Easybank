@@ -70,6 +70,11 @@
   display: block;
 }
 
+.footer {
+  background: #2d314d;
+  color: white;
+}
+
 :root {
   font-size: 16px;
 }
