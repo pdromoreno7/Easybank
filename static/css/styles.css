@@ -14,7 +14,7 @@
 .hero__image {
   height: 300px;
   margin: 0 calc(-1 * $wrapperSpace);
-  background: url("../../../../assets/imagenes/image-mockups.png") center bottom no-repeat, url("../../../../assets/imagenes/bg-intro-mobile.svg") center no-repeat;
+  background: url("/assets/imagenes/image-mockups.png") center bottom no-repeat, url("/assets/imagenes/bg-intro-mobile.svg") center no-repeat;
   background-size: 345px, cover;
 }
 
