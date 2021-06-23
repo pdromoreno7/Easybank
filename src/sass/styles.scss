@@ -54,3 +54,31 @@ body {
   font-size: 1em;
   background-image: linear-gradient(to right, $limeGreen 0%, $rightCyan);
 }
+@mixin icon {
+  width: 25px;
+  height: 25px;
+  background: no-repeat;
+  display: inline-flex;
+}
+.icon {
+  &__facebook {
+    @include icon;
+    background-image: url("../imagenes/icon-facebook.svg");
+  }
+  &__youtube {
+    @include icon;
+    background-image: url("../imagenes/icon-youtube.svg");
+  }
+  &__twitter {
+    @include icon;
+    background-image: url("../imagenes/icon-twitter.svg");
+  }
+  &__pinterest {
+    @include icon;
+    background-image: url("../imagenes/icon-pinterest.svg");
+  }
+  &__instagram {
+    @include icon;
+    background-image: url("../imagenes/icon-instagram.svg");
+  }
+}

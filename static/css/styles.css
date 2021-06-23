@@ -73,6 +73,31 @@
 .footer {
   background: #2d314d;
   color: white;
+  padding: 2em 0;
+  text-align: center;
+}
+.footer svg {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  text-align: center;
+}
+.footer__link {
+  display: block;
+  color: #f3f4f6;
+  text-decoration: none;
+  margin-bottom: 2em;
+}
+.footer__social {
+  display: grid;
+  grid-template-columns: repeat(5, 25px);
+  gap: 1em;
+  justify-content: center;
+  margin: 2.5em;
+}
+.footer__copyright {
+  color: #9698a6;
+  margin-top: 2.5em;
 }
 
 :root {
@@ -131,4 +156,40 @@ body {
   color: white;
   font-size: 1em;
   background-image: linear-gradient(to right, #31d35c 0%, #2bb7da);
+}
+
+.icon__facebook {
+  width: 25px;
+  height: 25px;
+  background: no-repeat;
+  display: inline-flex;
+  background-image: url("../imagenes/icon-facebook.svg");
+}
+.icon__youtube {
+  width: 25px;
+  height: 25px;
+  background: no-repeat;
+  display: inline-flex;
+  background-image: url("../imagenes/icon-youtube.svg");
+}
+.icon__twitter {
+  width: 25px;
+  height: 25px;
+  background: no-repeat;
+  display: inline-flex;
+  background-image: url("../imagenes/icon-twitter.svg");
+}
+.icon__pinterest {
+  width: 25px;
+  height: 25px;
+  background: no-repeat;
+  display: inline-flex;
+  background-image: url("../imagenes/icon-pinterest.svg");
+}
+.icon__instagram {
+  width: 25px;
+  height: 25px;
+  background: no-repeat;
+  display: inline-flex;
+  background-image: url("../imagenes/icon-instagram.svg");
 }/*# sourceMappingURL=styles.css.map */

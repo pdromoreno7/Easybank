@@ -1,4 +1,30 @@
 .footer {
   background: $darkBlue;
   color: $white;
+  padding: 2em 0;
+  text-align: center;
+  svg {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    text-align: center;
+  }
+  &__link {
+    display: block;
+    color: $gray;
+    text-decoration: none;
+    margin-bottom: 2em;
+  }
+  &__social {
+    // text-align: center;
+    display: grid;
+    grid-template-columns: repeat(5, 25px);
+    gap: 1em;
+    justify-content: center;
+    margin: 2.5em;
+  }
+  &__copyright {
+    color: $grayBlue;
+    margin-top: 2.5em;
+  }
 }
