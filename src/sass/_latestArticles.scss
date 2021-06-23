@@ -1,0 +1,32 @@
+.latestArticles {
+  background: $lightGray;
+  padding: 5em 0;
+  .title__h1 {
+    text-align: center;
+    margin-bottom: 0.5em;
+  }
+  .title__h3 {
+    text-align: left;
+  }
+  &__grid {
+    display: grid;
+    grid-row-gap: 2em;
+  }
+  &__item {
+    border-radius: 0.5em;
+    overflow: hidden;
+    background: $white;
+    &-content {
+      padding: 1.8em;
+    }
+    small {
+      color: $grayBlue;
+      margin-bottom: 1em;
+    }
+    img {
+      width: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+}

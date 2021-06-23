@@ -2,9 +2,9 @@
 @import "../sass/header";
 @import "../sass/hero";
 @import "../sass/menu";
-@import "../sass/why.scss";
-@import "../sass/latestArticles.scss";
-@import "../sass/footer.scss";
+@import "../sass/why";
+@import "../sass/latestArticles";
+@import "../sass/footer";
 
 :root {
   font-size: 16px;
@@ -35,6 +35,11 @@ body {
   &__h2 {
     @extend .title__h1;
     font-size: 1.5em;
+    // border: 1px solid red;
+  }
+  &__h3 {
+    @extend .title__h1;
+    font-size: 1em;
     // border: 1px solid red;
   }
 }
