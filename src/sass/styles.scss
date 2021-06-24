@@ -21,6 +21,8 @@ body {
 
 .wrapper {
   padding: 0 $wrapperSpace;
+  max-width: 1115px;
+  margin: auto;
 }
 @mixin title {
   font-size: 2.2em;
