@@ -2,6 +2,9 @@
   display: none;
 
   list-style: none;
+  padding: 0;
+  margin: 0;
+
   // justify-content: space-around;
   &__button {
     width: 40px;
@@ -12,6 +15,54 @@
     text-decoration: none;
     color: $grayBlue;
     padding: 0 1em;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+  &__checkbox {
+    display: none;
+    &:checked {
+      & ~ .menu__button {
+        background: url("../imagenes/icon-close.svg") no-repeat center;
+      }
+      & ~ .menu {
+        display: block;
+        position: absolute;
+        top: 100%;
+        padding: 1em;
+        left: 0;
+        right: 0;
+        height: 100vh;
+
+        background: linear-gradient(to bottom, $darkBlue 0%, transparent 90%);
+        // a {
+        //   background: white;
+        //   padding: 0.5em 1em;
+        //   display: block;
+        //   text-align: center;
+        // }
+        .menu__item {
+          &:first-of-type a {
+            padding-top: 2em;
+            border-radius: 0.5em 0.5em 0 0;
+          }
+          &:last-of-type a {
+            padding-bottom: 2em;
+            border-radius: 0 0 0.5em 0.5em;
+          }
+        }
+        a {
+          background: white;
+          padding: 0.8em 1em;
+          color: $darkBlue;
+          font-size: 1.1em;
+          display: block;
+          text-align: center;
+          flex: 1;
+        }
+      }
+    }
   }
   @media screen and (min-width: 1024px) {
     display: flex;

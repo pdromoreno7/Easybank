@@ -2,6 +2,7 @@
   display: flex;
   padding: 1em 0;
   justify-content: space-between;
+  position: relative;
 }
 .header__logo {
   align-self: center;
@@ -80,6 +81,8 @@
 .menu {
   display: none;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .menu__button {
   width: 40px;
@@ -90,6 +93,43 @@
   text-decoration: none;
   color: #9698a6;
   padding: 0 1em;
+}
+.menu__item {
+  display: flex;
+  align-items: center;
+}
+.menu__checkbox {
+  display: none;
+}
+.menu__checkbox:checked ~ .menu__button {
+  background: url("../imagenes/icon-close.svg") no-repeat center;
+}
+.menu__checkbox:checked ~ .menu {
+  display: block;
+  position: absolute;
+  top: 100%;
+  padding: 1em;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background: linear-gradient(to bottom, #2d314d 0%, transparent 90%);
+}
+.menu__checkbox:checked ~ .menu .menu__item:first-of-type a {
+  padding-top: 2em;
+  border-radius: 0.5em 0.5em 0 0;
+}
+.menu__checkbox:checked ~ .menu .menu__item:last-of-type a {
+  padding-bottom: 2em;
+  border-radius: 0 0 0.5em 0.5em;
+}
+.menu__checkbox:checked ~ .menu a {
+  background: white;
+  padding: 0.8em 1em;
+  color: #2d314d;
+  font-size: 1.1em;
+  display: block;
+  text-align: center;
+  flex: 1;
 }
 @media screen and (min-width: 1024px) {
   .menu {
